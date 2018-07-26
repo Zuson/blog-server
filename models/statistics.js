@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   var Statistics = sequelize.define('Statistics', {
     article_id: DataTypes.INTEGER,
