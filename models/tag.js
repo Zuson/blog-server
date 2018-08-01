@@ -1,14 +1,13 @@
 'use strict';
-
 module.exports = (sequelize, DataTypes) => {
-  var Label = sequelize.define('Label', {
+  var Tag = sequelize.define('Tag', {
     name: DataTypes.STRING,
     alias: DataTypes.STRING,
     icon: DataTypes.STRING,
     description: DataTypes.STRING
   }, {});
-  Label.associate = function(models) {
+  Tag.associate = function(models) {
     // associations can be defined here
   };
-  return Label;
+  return Tag;
 };
