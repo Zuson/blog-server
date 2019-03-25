@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-models.sequelize.sync({ force: true });
+// models.sequelize.sync({ force: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING, // 标题
     cover: DataTypes.STRING, // 背景
     content: DataTypes.TEXT, // 内容
-    summary: DataTypes.TEXT //  摘要
+    summary: DataTypes.TEXT, //  摘要
+    category_id: DataTypes.BOOLEAN
   }, {});
   Article.associate = function(models) {
     // associations can be defined here
